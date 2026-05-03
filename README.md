@@ -17,12 +17,42 @@ FinanceFlow is a lightweight, client‑side web app that helps you monitor your 
 
 ## 🧰 Tech Stack
 
- #Layer        #Technology                                      
+**Layer**     **Technology**                                      
 | Markup      | HTML5                                          
 | Styling     | CSS3 (Flexbox, Grid, Glassmorphism)            
 | Logic       | Vanilla JavaScript (ES6)                       
 | Icons       | Font Awesome 6                                  
 | Storage     | Browser LocalStorage API                        
+
+💻 Usage
+**Add a transaction**
+Enter a description (e.g., “Groceries”, “Freelance paycheck”) and an amount (>0).
+Choose “Income” or “Expense” from the dropdown.
+Click “Add transaction” – the summary and list update instantly.
+
+**View your finances**
+The three cards show Total Balance, Total Income, and Total Expenses.
+Below, every transaction appears with a timestamp and a delete button.
+
+**Manage transactions**
+Click the 🗑️ icon next to any transaction to delete it.
+Click “Clear all” to remove every transaction (confirmation required).
+
+**Data persistence**
+All entries are saved automatically in your browser's local storage.
+Refresh the page or close the browser – your data will be there when you return.
+
+🗺️ Future Roadmap
+📅 Date picker – allow users to assign custom dates to transactions
+📈 Spending charts – visual breakdown by category (pie/bar chart)
+🏷️ Category tags – group expenses like “Food”, “Transport”, “Bills”
+💱 Multi‑currency support – display amounts in different currencies
+📤 Export/Import – CSV export of transaction history and import from bank statements
+
+👥 Target Audience
+End‑users who want a simple, private way to track daily spending without creating an account
+Freelancers and students looking for a no‑frills budget overview
+Developers who want a clean example of a vanilla JS + localStorage app
 
 ## 🚀 Getting Started
 
@@ -44,35 +74,6 @@ npx serve .
 
 # Using VS Code Live Server extension
 # Right-click index.html → "Open with Live Server"
-
-💻 Usage
-Add a transaction
-Enter a description (e.g., “Groceries”, “Freelance paycheck”) and an amount (>0).
-Choose “Income” or “Expense” from the dropdown.
-Click “Add transaction” – the summary and list update instantly.
-
-#View your finances
-The three cards show Total Balance, Total Income, and Total Expenses.
-Below, every transaction appears with a timestamp and a delete button.
-
-#Manage transactions
-Click the 🗑️ icon next to any transaction to delete it.
-Click “Clear all” to remove every transaction (confirmation required).
-
-#Data persistence
-All entries are saved automatically in your browser's local storage.
-Refresh the page or close the browser – your data will be there when you return.
-
-🗺️ Future Roadmap
-📅 Date picker – allow users to assign custom dates to transactions
-📈 Spending charts – visual breakdown by category (pie/bar chart)
-🏷️ Category tags – group expenses like “Food”, “Transport”, “Bills”
-💱 Multi‑currency support – display amounts in different currencies
-📤 Export/Import – CSV export of transaction history and import from bank statements
-
-👥 Target Audience
-End‑users who want a simple, private way to track daily spending without creating an account
-Freelancers and students looking for a no‑frills budget overview
-Developers who want a clean example of a vanilla JS + localStorage app
+```
 
 Made with ❤️ for simple personal finance.
