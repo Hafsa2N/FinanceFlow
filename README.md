@@ -26,7 +26,7 @@ FinanceFlow is a lightweight, client‑side web app that helps you monitor your 
 | Storage     | Browser LocalStorage API                        
 
 💻 Usage
-\\
+
 **Add a transaction**
 Enter a description (e.g., “Groceries”, “Freelance paycheck”) and an amount (>0).
 Choose “Income” or “Expense” from the dropdown.
@@ -52,9 +52,9 @@ Refresh the page or close the browser – your data will be there when you retur
 📤 Export/Import – CSV export of transaction history and import from bank statements
 
 👥 Target Audience
-End‑users who want a simple, private way to track daily spending without creating an account
-Freelancers and students looking for a no‑frills budget overview
-Developers who want a clean example of a vanilla JS + localStorage app
+#End‑users who want a simple, private way to track daily spending without creating an account
+#Freelancers and students looking for a no‑frills budget overview
+#Developers who want a clean example of a vanilla JS + localStorage app
 
 ## 🚀 Getting Started
 
