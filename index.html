@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FinanceFlow • Personal Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="glass-card main-panel">
+            <div class="app-header">
+                <div class="title-section">
+                    <i class="fas fa-wallet logo-icon"></i>
+                    <h1>FinanceFlow</h1>
+                </div>
+                <p class="tagline">track • balance • thrive</p>
+            </div>
+
+            <div class="summary-grid">
+                <div class="summary-card balance-card">
+                    <div class="summary-label"><i class="fas fa-coins"></i> <span>Total Balance</span></div>
+                    <div class="summary-value" id="totalBalance">$0.00</div>
+                </div>
+                <div class="summary-card income-card">
+                    <div class="summary-label"><i class="fas fa-arrow-up"></i> <span>Income</span></div>
+                    <div class="summary-value" id="totalIncome">$0.00</div>
+                </div>
+                <div class="summary-card expense-card">
+                    <div class="summary-label"><i class="fas fa-arrow-down"></i> <span>Expenses</span></div>
+                    <div class="summary-value" id="totalExpense">$0.00</div>
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <h3><i class="fas fa-plus-circle"></i> New transaction</h3>
+                <form id="transactionForm" class="transaction-form">
+                    <div class="input-group">
+                        <label><i class="fas fa-tag"></i> Description</label>
+                        <input type="text" id="description" placeholder="e.g., Groceries, Freelance, Rent..." autocomplete="off">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group half">
+                            <label><i class="fas fa-dollar-sign"></i> Amount</label>
+                            <input type="number" id="amount" step="0.01" placeholder="0.00">
+                        </div>
+                        <div class="input-group half">
+                            <label><i class="fas fa-exchange-alt"></i> Type</label>
+                            <select id="type">
+                                <option value="income">💰 Income</option>
+                                <option value="expense">💸 Expense</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary"><i class="fas fa-check-circle"></i> Add transaction</button>
+                </form>
+                <div id="formFeedback" class="feedback-msg"></div>
+            </div>
+
+            <div class="history-section">
+                <div class="history-header">
+                    <h3><i class="fas fa-list-ul"></i> Recent activity</h3>
+                    <button id="clearAllBtn" class="btn-clear" title="Clear all transactions">
+                        <i class="fas fa-trash-alt"></i> Clear all
+                    </button>
+                </div>
+                <div id="transactionsList" class="transactions-container">
+                    <div class="empty-state">
+                        <i class="fas fa-receipt"></i>
+                        <p>No transactions yet.<br>Add your first one above 👆</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-note">
+                <i class="fas fa-database"></i> Data saved locally • persists on refresh
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
