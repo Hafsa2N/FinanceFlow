@@ -44,16 +44,18 @@ Click “Clear all” to remove every transaction (confirmation required).
 All entries are saved automatically in your browser's local storage.
 Refresh the page or close the browser – your data will be there when you return.
 
-🗺️ Future Roadmap
+**Future Roadmap**
 📅 Date picker – allow users to assign custom dates to transactions
 📈 Spending charts – visual breakdown by category (pie/bar chart)
 🏷️ Category tags – group expenses like “Food”, “Transport”, “Bills”
 💱 Multi‑currency support – display amounts in different currencies
 📤 Export/Import – CSV export of transaction history and import from bank statements
 
-👥 Target Audience
+**Target Audience**
 #End‑users who want a simple, private way to track daily spending without creating an account
+
 #Freelancers and students looking for a no‑frills budget overview
+
 #Developers who want a clean example of a vanilla JS + localStorage app
 
 ## 🚀 Getting Started
