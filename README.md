@@ -17,7 +17,8 @@ FinanceFlow is a lightweight, client‑side web app that helps you monitor your 
 
 ## 🧰 Tech Stack
 
-**Layer**     **Technology**                                      
+**Layer**     **Technology**  
+
 | Markup      | HTML5                                          
 | Styling     | CSS3 (Flexbox, Grid, Glassmorphism)            
 | Logic       | Vanilla JavaScript (ES6)                       
@@ -25,6 +26,7 @@ FinanceFlow is a lightweight, client‑side web app that helps you monitor your 
 | Storage     | Browser LocalStorage API                        
 
 💻 Usage
+\\
 **Add a transaction**
 Enter a description (e.g., “Groceries”, “Freelance paycheck”) and an amount (>0).
 Choose “Income” or “Expense” from the dropdown.
